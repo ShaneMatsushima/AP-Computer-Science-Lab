@@ -1,0 +1,49 @@
+sizeOfCanvasX = 200
+sizeOfCanvasY = 200
+
+fill(255);
+stroke(0);
+blockTL();
+blockTR();
+blockBL();
+blockBR();
+
+if(((mouseX > 0) && (mouseX < sizeOfCanvas/2)) && ((mouseY > 0) && mouseY < sizeOfCanvasY/2)){
+fill(0);
+stroke(0);
+blockTL();
+}
+
+if(((mouseX > sizeOfCanvasX/2) && (mouseX < sizeOfCanvasX)) && ((mouseY > 0) && mouseY < sizeOfCanvasY/2)){
+fill(0);
+stroke(0);
+blockTR();
+}
+
+if(((mouseX > 0) && (mouseX < sizeOfCanvasX/2)) && ((mouseY > sizeOfCanvasY/2) && mouseY < sizeOfCanvasY)){
+fill(0);
+stroke(0);
+blockBL();
+}
+
+if(((mouseX > sizeOfCanvasX/2) && (mouseX < sizeOfCanvasX)) && ((mouseY > sizeOfCanvasY/2) && mouseY < sizeOfCanvasY)){
+fill(0);
+stroke(0);
+blockBR();
+}
+
+void blockTL(){
+rect(0,0,sizeOfCanvasX/2,sizeOfCanvasY/2)
+}
+
+void blockTR(){
+rect(sizeOfCanvasX/,0,sizeOfCanvasX/2, sizeOfCanvasY/2)
+}
+
+void blockBL(){
+rect(0,sizeOfCanvazY/2,sizeOfCanvasX/2,sizeOfCanvasY/2)
+}
+
+void blockBR(){
+rect(sizeOfCanvasX/2,sizeOfCanvasY/2,sizeOfCanvasX/2,sizeOfCanvasY/2)
+}
