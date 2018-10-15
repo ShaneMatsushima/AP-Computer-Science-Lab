@@ -1,5 +1,5 @@
-#Pac-Man Overview
-##Description
+# Pac-Man Overview
+## Description
 In this project, I will try my best to recreate the game Pac-Man. This project will consist of a pac-man, 4 colored ghostt,
 small pellets, power-up pellets, a total score, and a start screen with music. 
 
